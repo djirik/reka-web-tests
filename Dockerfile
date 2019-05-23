@@ -65,7 +65,7 @@ RUN set -x && \
     apt-get install -y \
         bzip2 \
         zip \
-        git openssh python libpng build-base
+        git openssh python libpng-dev build-essential
 
 # RUN node -v
 # RUN npm -v
