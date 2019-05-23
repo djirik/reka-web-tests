@@ -21,7 +21,7 @@ RUN export JAVA_HOME
 
 # Install node 8
 RUN set -x &&\
-    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - &&\
+    curl -sL https://deb.nodesource.com/setup_10.x | bash - &&\
     apt-get install -y nodejs
 
 # Install Chrome
