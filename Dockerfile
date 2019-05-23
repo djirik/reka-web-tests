@@ -11,7 +11,8 @@ RUN set -x \
         openjdk-8-jdk \
         openjdk-8-jdk \
         curl \
-        wget
+        wget \
+        
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
@@ -64,7 +65,8 @@ RUN set -x && \
     apt-get update && \
     apt-get install -y \
         bzip2 \
-        zip
+        zip \
+        git openssh python libpng build-base
 
 # RUN node -v
 # RUN npm -v
