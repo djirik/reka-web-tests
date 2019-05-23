@@ -11,9 +11,8 @@ RUN set -x \
         openjdk-8-jdk \
         openjdk-8-jdk \
         curl \
-        wget \
+        wget 
         
-
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
 
