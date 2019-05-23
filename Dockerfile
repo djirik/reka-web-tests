@@ -34,8 +34,8 @@ RUN set -x \
         xvfb \
         google-chrome-stable
 
-ADD scripts/xvfb-chrome /usr/bin/xvfb-chrome
-RUN ln -sf /usr/bin/xvfb-chrome /usr/bin/google-chrome
+# ADD scripts/xvfb-chrome /usr/bin/xvfb-chrome
+# RUN ln -sf /usr/bin/xvfb-chrome /usr/bin/google-chrome
 
 ENV CHROME_BIN /usr/bin/google-chrome
 
