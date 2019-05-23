@@ -46,7 +46,6 @@ RUN set -x \
     && apt-get install -y \
         pkg-mozilla-archive-keyring
 
-RUN echo 'deb http://security.debian.org/ jessie/updates main' >> /etc/apt/sources.list.d/jessie-updates.list
 
 RUN set -x \
     && apt-get update \
