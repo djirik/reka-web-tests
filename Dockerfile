@@ -1,10 +1,6 @@
 FROM ubuntu:16.04
 # Install Java 8
 
-RUN set -x \
-    && apt-get update \
-    && apt-get install -y \
-        locales
 
 RUN set -x \
     && apt-get update \
@@ -13,7 +9,9 @@ RUN set -x \
         openjdk-8-jre \
         openjdk-8-jre \
         openjdk-8-jdk \
-        openjdk-8-jdk
+        openjdk-8-jdk \
+        curl \
+        wget
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
 RUN export JAVA_HOME
