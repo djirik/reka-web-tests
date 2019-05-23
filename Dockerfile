@@ -51,8 +51,7 @@ RUN set -x \
     && apt-get update \
     && apt-get install -y \
         xvfb \
-    && apt-get install -y -t \
-        jessie-backports \
+    && apt-get install -y \
         firefox-esr
 
 ADD scripts/xvfb-firefox /usr/bin/xvfb-firefox
