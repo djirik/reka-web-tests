@@ -6,9 +6,6 @@ RUN set -x \
     && apt-get install -y \
         locales
 
-ENV LANG C.UTF-8
-RUN locale-gen $LANG
-
 RUN set -x \
     && apt-get update \
     && apt-get install -y \
